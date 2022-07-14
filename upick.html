@@ -1,0 +1,254 @@
+<!-- THIS IS A TEMPLATE FOR ALL PAGES SEPARATE FROM INDEX -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Projects: UPick</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="imgs/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="imgs/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="imgs/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="imgs/favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="imgs/favicons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Font awesome icons -->
+    <script
+      src="https://kit.fontawesome.com/e4e06371c3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html#projects">
+          <img
+            src="imgs/logos/logo1_crop.png"
+            alt="A picture of Jason Lee's logo"
+          />
+        </a>
+      </div>
+
+      <!-- Nav -->
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html#home" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#about" class="nav__link">About Me</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#edu" class="nav__link">My Education</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#projects" class="nav__link">My Projects</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#keyboards" class="nav__link">My Keyboards</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro">
+      <h1 class="section__title section__title--intro">
+        UPick:<strong>A Food Picker App</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">
+        Using React Native and various APIs
+      </p>
+      <img
+        src="imgs/projects/upick/logos/upick_intro.jpg"
+        alt="A picture of the UPick logo"
+        class="intro__img center__image"
+      />
+    </section>
+
+    <div class="portfolio-item-individual">
+      <h2>Project Overview</h2>
+      <p>
+        UPick is a mobile application that I worked on during the 2020 Fall
+        quarter in the course CSE 110:
+        <em>Software Engineering</em> at UC San Diego. In this course, I worked
+        in a waterfall team of nine other students to develop software of our
+        choice. The primary function of the app that we created is to suggest
+        restaurants for users based on their preferences. The app is built with
+        React Native and uses the Yelp and Edamam APIs.
+      </p>
+      <figure>
+        <img
+          src="imgs/projects/upick/upick_imgs/upick_homepage.png"
+          alt="A picture of the UPick homepage"
+          class="center__image-shadow"
+        />
+        <figcaption class="caption-shadow">
+          <i>The UPick homepage</i>
+        </figcaption>
+      </figure>
+      <p>
+        The UPick app obtains various preferences by requiring users to fill out
+        a page that asks about their various preferences for restaurants. UPick
+        also allows for users to merge their preferences into a group in order
+        to accomodate the preferences of an entire group. Additionally, UPick
+        has a page for users to log their spending as well as an option to
+        receive recipes instead of restaurants recommendations based on their
+        preferences.
+      </p>
+      <figure>
+        <img
+          src="imgs/projects/upick/upick_imgs/upick_prefs.png"
+          alt="A picture of the preferences page in UPick"
+          class="center__image-shadow"
+        />
+        <figcaption class="caption-shadow">
+          <i>The page to enter user dining preferences in UPick</i>
+        </figcaption>
+      </figure>
+      <p>
+        The UPick app suggests a restaurant to a user by using their input
+        preferences as filters to pass into the Yelp API. The app returns the
+        most recommended restaurant from the Yelp API based on these
+        preferences. If the user is receiving recipes instead of restaurant
+        recommendations, their preferences are passed into the Edamam API and
+        its results are returned.
+      </p>
+      <figure>
+        <img
+          src="imgs/projects/upick/upick_imgs/upick_result.png"
+          alt="A picture of the restaurant chosen by UPick"
+          class="center__image-shadow"
+        />
+        <figcaption class="caption-shadow">
+          <i>An example of a restaurant generated by UPick</i>
+        </figcaption>
+      </figure>
+
+      <h2 style="margin-top: 60px">My Role in the Project</h2>
+      <p>
+        Each person in our team selected a specific role from the choices
+        offered by the class. My position on the team was the software
+        architect. I was in charge of designing the systems that implement the
+        various features of the UPick application. Part of this design process
+        involves creating user diagrams for each of the use cases in UPick.
+      </p>
+      <figure>
+        <img
+          src="imgs/projects/upick/upick_imgs/upick_diagrams_legend.png"
+          alt="A picture of the legend for UPick user diagrams"
+          class="center__image"
+        />
+        <figcaption class="caption">
+          <i>The legend for UPick user diagrams</i>
+        </figcaption>
+      </figure>
+      <p>
+        The user diagrams that I created represent the application's backend
+        functionality as well as serve as schematics for developers on my team
+        to use during implementation. One of the main processes in UPick is
+        entering user preferences. Below is a user diagram for this process
+        which I created.
+      </p>
+      <figure>
+        <img
+          src="imgs/projects/upick/upick_imgs/upick_prefs_diagram.png"
+          alt="A picture of UPick preferences user diagram"
+          class="center__image"
+        />
+        <figcaption class="caption">
+          <i>Input preferences user diagram for UPick</i>
+        </figcaption>
+      </figure>
+
+      <h2 style="margin-top: 60px">Source Code</h2>
+      <a
+        href="https://github.com/leejoongyin/FoodForagersUPick"
+        target="_blank"
+      >
+        <img
+          class="github_src center__image"
+          src="imgs/projects/GitHub_logo.png"
+          alt="A picture of the GitHub logo"
+        />
+      </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="mailto:jaslee643@gmail.com" target="_blank" class="footer__link"
+        >jaslee643@gmail.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://github.com/jal004"
+            target="_blank"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.linkedin.com/in/jason-lee-95b1a4203/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>

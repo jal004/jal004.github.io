@@ -1,0 +1,261 @@
+<!-- THIS IS A TEMPLATE FOR ALL PAGES SEPARATE FROM INDEX -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Projects: NYSE vs. US Economy</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="imgs/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="imgs/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="imgs/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="imgs/favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="imgs/favicons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Font awesome icons -->
+    <script
+      src="https://kit.fontawesome.com/e4e06371c3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html#projects">
+          <img
+            src="imgs/logos/logo1_crop.png"
+            alt="A picture of Jason Lee's logo"
+          />
+        </a>
+      </div>
+
+      <!-- Nav -->
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html#home" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#about" class="nav__link">About Me</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#edu" class="nav__link">My Education</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#projects" class="nav__link">My Projects</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#keyboards" class="nav__link">My Keyboards</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro">
+      <h1 class="section__title section__title--intro">
+        NYSE vs. US Economy:<strong>A Data Analysis Project</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">
+        Using Python and its various libraries
+      </p>
+      <img
+        src="imgs/projects/cogs_108/logos/cogs_108_intro.jpg"
+        alt="A picture representing stock prices"
+        class="intro__img"
+      />
+    </section>
+
+    <div class="portfolio-item-individual">
+      <h2>Project Overview</h2>
+      <p>
+        This is a project that I worked on during the 2022 Spring quarter in the
+        course COGS 108: <em>Data Science in Practice</em> at UC San Diego. In
+        this course, I worked on a team with four other students to develop,
+        research, and give conclusions to our own research question. Our
+        research question involved determining the relationship between the
+        price of the New York Stock Exchange (stock index NYA) and various
+        metrics of US economic performance between 1980 to 2016.
+      </p>
+      <figure>
+        <img
+          src="imgs/projects/cogs_108/cogs_108_imgs/cogs_108_avg_nyse.png"
+          alt="A graph of the average closing price of NYA vs. year"
+          class="center__image"
+        />
+        <figcaption class="caption">
+          <i>
+            Percent change in the average closing price of NYA for each year
+            between 1980 to 2016
+          </i>
+        </figcaption>
+      </figure>
+      <p>
+        The metrics of US economic performance that our team decided to use were
+        GDP, real GDP, inflation rate, unemployment rate, and effective federal
+        funds rate in the US between 1980 to 2016.
+      </p>
+      <figure>
+        <img
+          src="imgs/projects/cogs_108/cogs_108_imgs/cogs_108_avg_us.png"
+          alt="A graph of the percent change in each US metric vs. year"
+          class="center__image"
+        />
+        <figcaption class="caption">
+          <i>Percent change in each US metric between 1980 to 2016</i>
+        </figcaption>
+      </figure>
+
+      <h2 style="margin-top: 60px">My Role in the Project</h2>
+      <p>
+        In order to obtain the data in the visualizations above, our team needed
+        to clean the NYA price history dataset and various datasets pertaining
+        to the economic performance of the US. I was one of the members that was
+        primarily involved in cleaning and wrangling each of these datasets
+        using the pandas and NumPy libraries from Python.
+      </p>
+      <figure>
+        <img
+          src="imgs/projects/cogs_108/cogs_108_imgs/nya_before_clean.png"
+          alt="A picture of the NYA dataframe before cleaning"
+          class="center__image"
+        />
+        <figcaption class="caption">
+          <i>
+            The dataframe of the NYA stock index dataset before cleaning and
+            wrangling
+          </i>
+        </figcaption>
+      </figure>
+      <figure>
+        <img
+          src="imgs/projects/cogs_108/cogs_108_imgs/nya_after_clean.png"
+          alt="A picture of the NYA dataframe after cleaning"
+          class="center__image"
+        />
+        <figcaption class="caption">
+          <i>
+            The dataframe of the NYA stock index dataset after cleaning and
+            wrangling
+          </i>
+        </figcaption>
+      </figure>
+      <p>
+        I was also involved in data visualization, constructing various plots
+        using the Seaborn and Matplotlib libraries from Python. Additionally, I
+        generated the regression tests between the price of NYA and each of the
+        US metrics between 1980 to 2016 in order to infer the strength of a
+        linear relationship between the variables.
+      </p>
+      <figure>
+        <img
+          src="imgs/projects/cogs_108/cogs_108_imgs/nya_vs_gdp.png"
+          alt="A picture of the OLS regression results for NYA prices vs. US GDP"
+          class="center__image"
+        />
+        <figcaption class="caption">
+          <i> The OLS regression test results for NYA prices vs. US GDP </i>
+        </figcaption>
+      </figure>
+      <figure>
+        <img
+          src="imgs/projects/cogs_108/cogs_108_imgs/nya_vs_gdp_plot.png"
+          alt="A graph of the regression line for NYA prices vs. US GDP"
+          class="center__image"
+        />
+        <figcaption class="caption">
+          <i> The regression line for NYA prices vs. US GDP </i>
+        </figcaption>
+      </figure>
+
+      <h2 style="margin-top: 60px">Source Code</h2>
+      <a
+        href="https://github.com/jal004/COGS108_SP22_Group009_Project/blob/master/FinalProject_group009.ipynb"
+        target="_blank"
+      >
+        <img
+          class="github_src center__image"
+          src="imgs/projects/GitHub_logo.png"
+          alt="A picture of the GitHub logo"
+        />
+      </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="mailto:jaslee643@gmail.com" target="_blank" class="footer__link"
+        >jaslee643@gmail.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://github.com/jal004"
+            target="_blank"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.linkedin.com/in/jason-lee-95b1a4203/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jason Lee's Portfolio Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="imgs/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="imgs/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="imgs/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="imgs/favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="imgs/favicons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Font awesome icons -->
+    <script
+      src="https://kit.fontawesome.com/e4e06371c3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <a id="home"></a>
+    <header>
+      <div class="logo">
+        <img
+          src="imgs/logos/logo1_crop.png"
+          alt="A picture of Jason Lee's logo"
+        />
+      </div>
+
+      <!-- Nav -->
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About Me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#edu" class="nav__link">My Education</a>
+          </li>
+          <li class="nav__item">
+            <a href="#projects" class="nav__link">My Projects</a>
+          </li>
+          <li class="nav__item">
+            <a href="#keyboards" class="nav__link">My Keyboards</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro">
+      <h1 class="section__title section__title--intro">
+        Hi, I am <strong>Jason Lee</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">
+        Computer Engineer
+      </p>
+      <img
+        src="imgs/portraits/white_blue_crossed.png"
+        alt="A picture of Jason Lee smiling"
+        class="intro__img"
+      />
+    </section>
+
+    <!-- About me -->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">Who I am</h2>
+      <p class="section__subtitle section__subtitle--about">
+        Developer & keyboard enthusiast based out of San Diego
+      </p>
+      <div class="about-me__body">
+        <p>
+          I was born and raised in a moderately small city in California called
+          Escondido by two immigrant parents from Vietnam. Speaking Vietnamese
+          at home while speaking English in school resulted in me being fluent
+          in English but only being able to speak and understand Vietnamese. At
+          a young age, I developed a deep interest in mathematics and often
+          consulted with my teachers in school for further studying. I have also
+          always been curious about how things work, especially technology.
+          These interests led me to pursue a degree in computer engineering.
+        </p>
+        <p>
+          I began building mechanical keyboards as a hobby during the
+          coronavirus pandemic in late 2020. I have constructed several
+          keyboards in different layouts, and I plan on creating more in the
+          future. I especially enjoy this hobby as it allows me to work with
+          hardware through assembling each keyboard and software while
+          programming its firmware. I have documented some of the keyboards that
+          I have already built at the bottom of my portfolio.
+        </p>
+        <div class="resume__wrapper">
+          <a
+            class="resume__link"
+            href="https://drive.google.com/file/d/1EmXI0tCLGDQZVQ3W9lIzHoQk-bSkHTI1/view?usp=sharing"
+            target="_blank"
+          >
+            <i class="fa-solid fa-file"></i>
+            Resume PDF
+          </a>
+        </div>
+      </div>
+      <img
+        src="imgs/portraits/portrait_bw.png"
+        alt="A picture of Jason Lee with one of his keyboards"
+        class="about-me__img"
+      />
+    </section>
+
+    <!-- Education -->
+    <section class="my-education" id="edu">
+      <h2 class="section__title section__title--edu">My Education</h2>
+      <p class="section__subtitle section__subtitle--edu">
+        First-generation university graduate
+      </p>
+      <div class="my-education__body">
+        <ol>
+          <li>
+            <b>Aug 2014 - Jun 2018: </b> San Pasqual High School:
+            <i>High School Diploma</i>
+            <p>
+              I graduated from my high school in the valedictory circle with a
+              4.43 cumulative GPA. During my last two years of high school, I
+              tutored high school algebra, calculus, and statistics for 10-12
+              hours a week.
+            </p>
+          </li>
+          <li>
+            <b>Aug 2018 - Jun 2022: </b> University of California, San Diego:
+            <i>Bachelor's of Science in Computer Engineering</i>
+            <p>
+              I graduated from UC San Diego in the Computer Engineering (CS25)
+              program of the Computer Science and Engineering (CSE) department
+              with a 3.419 cumulative GPA and 3.217 major GPA. I became
+              proficient in Python, Java, and C++. I have also taken courses on
+              web development and machine learning.
+            </p>
+          </li>
+        </ol>
+      </div>
+      <img
+        src="imgs/portraits/grad_single.png"
+        alt="A picture of Jason Lee wearing academic regalia"
+        class="my-education__img"
+      />
+    </section>
+
+    <!-- My Projects -->
+    <section class="my-projects" id="projects">
+      <h2 class="section__title section__title--projects">My Projects</h2>
+      <p class="section__subtitle section__subtitle--projects">
+        Some of the projects that I worked on during my time in university
+      </p>
+
+      <div class="portfolio">
+        <!-- porfolio item 1 -->
+        <div id="wrapper">
+          <a href="upick.html" class="portfolio--item">
+            <img
+              src="imgs/projects/upick/logos/upick_logo.png"
+              alt="The logo of the UPick project"
+              class="portfolio__img"
+            />
+            <p class="upick_text">UPick: A Food Picker App</p>
+          </a>
+        </div>
+
+        <!-- porfolio item 2 -->
+        <div id="wrapper">
+          <a href="cogs108.html" class="portfolio--item">
+            <img
+              src="imgs/projects/cogs_108/logos/cogs_108.png"
+              alt="A picture representing data analysis"
+              class="portfolio__img"
+            />
+            <p class="cogs_text">
+              NYSE vs. US Economy: A Data Analysis Project
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Keyboards -->
+    <section class="my-keyboards" id="keyboards">
+      <h2 class="section__title section__title--keyboards">My Keyboards</h2>
+      <p class="section__subtitle section__subtitle--keyboards">
+        The first of many to come
+      </p>
+      <div class="centering">
+        <div class="grid-container">
+          <!-- keyboard item 1 -->
+          <div class="grid-item grid-item-1">
+            <a href="sat75.html" class="grid__link">
+              <img
+                class="grid__image"
+                src="imgs/keyboards/thumbnails/sat75_thumbnail.jpg"
+                alt="A picture of the Satisfaction 75 keyboard"
+              />
+              <div class="grid__overlay">
+                <span>Satisfaction 75</span>
+              </div>
+            </a>
+          </div>
+          <!-- keyboard item 2 -->
+          <div class="grid-item grid-item-2">
+            <a href="bm65.html" class="grid__link">
+              <img
+                class="grid__image"
+                src="imgs/keyboards/thumbnails/bm65_left_half.jpg"
+                alt="A picture of the BM65 keyboard"
+              />
+              <div class="grid__overlay">
+                <span>BM65</span>
+              </div>
+            </a>
+          </div>
+          <!-- keyboard item 3 -->
+          <div class="grid-item grid-item-3">
+            <a href="basketweave.html" class="grid__link">
+              <img
+                class="grid__image"
+                src="imgs/keyboards/thumbnails/bw_right_half.jpg"
+                alt="A picture of the Basketweave keyboard"
+              />
+              <div class="grid__overlay">
+                <span>Basketweave</span>
+              </div>
+            </a>
+          </div>
+          <!-- keyboard item 4 -->
+          <div class="grid-item grid-item-4">
+            <a href="index.html#keyboards" class="grid__link">
+              <img
+                class="grid__image"
+                src="imgs/keyboards/thumbnails/coming_soon_rect_gray.png"
+                alt="A picture of the Basketweave keyboard"
+              />
+              <div class="grid__overlay">
+                <span>Ikki68 Aurora</span>
+              </div>
+            </a>
+          </div>
+          <!-- keyboard item 5 -->
+          <div class="grid-item grid-item-5">
+            <a href="index.html#keyboards" class="grid__link">
+              <img
+                class="grid__image"
+                src="imgs/keyboards/thumbnails/coming_soon_sq_gray.png"
+                alt="A picture of the Basketweave keyboard"
+              />
+              <div class="grid__overlay">
+                <span>Freebird TKL</span>
+              </div>
+            </a>
+          </div>
+          <!-- keyboard item 6 -->
+          <div class="grid-item grid-item-6">
+            <a href="index.html#keyboards" class="grid__link">
+              <img
+                class="grid__image"
+                src="imgs/keyboards/thumbnails/coming_soon_sq_gray.png"
+                alt="A picture of the Basketweave keyboard"
+              />
+              <div class="grid__overlay">
+                <span>Clunker</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="mailto:jaslee643@gmail.com" target="_blank" class="footer__link"
+        >jaslee643@gmail.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://github.com/jal004"
+            target="_blank"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.linkedin.com/in/jason-lee-95b1a4203/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>
