@@ -853,7 +853,7 @@ video {
   }
 }
 
-/* basketweave gallery */
+/** basketweave gallery */
 .bw-grid-container {
   margin-top: 5em;
   display: grid;
@@ -883,12 +883,12 @@ video {
   grid-row: 4 / span 1;
 }
 
-/* satisfaction 75 gallery */
+/** satisfaction 75 gallery */
 .sat75-grid-container {
   margin-top: 5em;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(0px, 500px));
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 0.5rem;
   justify-content: center;
 }
