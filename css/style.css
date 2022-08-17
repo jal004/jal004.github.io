@@ -13,7 +13,7 @@
 
   --clr-light: #fff;
   --clr-dark: #303030;
-  --clr-accent: #16e0bd;
+  --clr-accent: #3fd8ec;
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -1157,12 +1157,12 @@ video {
 
 .clunker-item-9 {
   grid-column: 1 / span 1;
-  grid-row: 8 / span 1;
+  grid-row: 9 / span 1;
 }
 
 .clunker-item-10 {
   grid-column: 1 / span 1;
-  grid-row: 8 / span 1;
+  grid-row: 10 / span 1;
 }
 
 /* clunker desktop viewport */
