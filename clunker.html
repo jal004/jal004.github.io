@@ -116,10 +116,12 @@
       <!-- Overview -->
       <h2>Keyboard Overview</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Nullam eget felis
-        eget nunc lobortis mattis aliquam faucibus. Cursus euismod quis viverra
-        nibh. Sit amet nulla facilisi morbi tempus iaculis.
+        The Clunker is a 40% keyboard with a knob and a solenoid manufactured by
+        MechWild. The 40% is a layout that consists of only the alphabetical and
+        some of the "modifier" (Space, Shift, Enter, etc.) keys. One key feature
+        of 40% keyboards is that they usually do not have a number key row. If
+        it is present, then it is only half of the row as seen in the layout of
+        the Clunker below.
       </p>
       <ul>
         <li><strong>Groupbuy Price: </strong>$50</li>
@@ -139,6 +141,137 @@
           <i> The layout of the Clunker </i>
         </figcaption>
       </figure>
+      <p>
+        The mounting style of the BM65 is known as a "top" mount, meaning that
+        the plate is secured to only the top-half of the case. This mounting
+        style offers a stiffer typing experience compared to other mounts.
+      </p>
+      <figure>
+        <img
+          src="imgs/keyboards/clunker/clunker_top_mount.png"
+          alt="A picture of the mounting style of the Clunker"
+          class="center__image"
+        />
+        <figcaption class="caption">
+          <i
+            >The sandwich-mount mounting style of the Basketweave
+            <a
+              href="https://www.keyboard.university/200-courses/keyboard-mounting-styles-4lpp7"
+              target="_blank"
+              >(Source)</a
+            ></i
+          >
+        </figcaption>
+      </figure>
+      <p>
+        The Clunker is sold as a kit consisting of a blank PCB and various
+        components that are to be soldered onto it. Custom mechanical keyboards
+        are not typically sold like this, and often arrive with PCBs that have
+        all of their components already soldered. However, the Clunker is a
+        small project that was coordinated by several people, rather than a
+        corporation or factory. Selling the kits this way greatly reduces the
+        cost and labor which is also reflected in its final retail price.
+      </p>
+      <figure>
+        <img
+          src="imgs/keyboards/clunker/clunker_kit.jpg"
+          alt="A picture of the Clunker kit"
+          class="center__image"
+        />
+        <figcaption class="caption">
+          <i>The contents of the Clunker kit </i>
+        </figcaption>
+      </figure>
+      <p>
+        The components that come with the Clunker include diodes, transistors,
+        resistors, and a solenoid
+      </p>
+      <figure>
+        <img
+          src="imgs/keyboards/clunker/clunker_diodes_back.jpg"
+          alt="A picture of the diodes on the back of the Clunker PCB"
+          class="center__image"
+        />
+        <figcaption class="caption">
+          <i
+            >The back of the Clunker PCB after soldering the first components</i
+          >
+        </figcaption>
+      </figure>
+      <p>
+        Additionally, the components to solder onto the PCB are "through-hole",
+        meaning that the devices have legs that are passed through the sockets
+        of the PCB when soldered and cut once the joints are made behind the
+        PCB. These components are not common among the majority of keyboards
+        which use "surface-mount" components that are soldered to the front, or
+        surface, of the PCB.
+      </p>
+      <figure>
+        <img
+          src="imgs/keyboards/clunker/clunker_diodes_front.jpg"
+          alt="A picture of the diodes on the front of the Clunker PCB"
+          class="center__image"
+        />
+        <figcaption class="caption">
+          <i
+            >The front of the Clunker PCB after soldering the first
+            components</i
+          >
+        </figcaption>
+      </figure>
+      <p>
+        The PCB has also been made "hotswappable" by soldering 0305 Mill-Max
+        sockets in each of the switch sockets. This allows for switches to be
+        installed and uninstalled by simply inserting the switches into the PCB
+        as opposed to soldering and desoldering them.
+      </p>
+      <figure>
+        <img
+          src="imgs/keyboards/clunker/clunker_millmax_front.jpg"
+          alt="A picture of the front of the finished Clunker PCB"
+          class="center__image"
+        />
+        <figcaption class="caption">
+          <i>The front of the finished Clunker PCB</i>
+        </figcaption>
+      </figure>
+      <figure>
+        <img
+          src="imgs/keyboards/clunker/clunker_millmax_back.jpg"
+          alt="A picture of the back of the finished Clunker PCB"
+          class="center__image"
+        />
+        <figcaption class="caption">
+          <i>The back of the finished Clunker PCB</i>
+        </figcaption>
+      </figure>
+      <p>
+        The name "Clunker" is an informal reference to old cars, as the use of
+        solenoids can be seen in both cars and old-fashioned keyboards.
+        Solenoids were primarily used in IBM typewriters in order to prevent the
+        activation of multiple keys at the same time, and they are responsible
+        for the "ticking" noise that typewriters make when typing. During the
+        transition from typewriters to keyboards, the first few IBM keyboards,
+        such as the
+        <a href="https://www.youtube.com/watch?v=ZT9CHub9Cxs" target="_blank"
+          >IBM 5251</a
+        >, featured a solenoid whose sole purpose was to make the same noise as
+        a typewriter so that people could transition from typewriters to
+        keyboards easier. The solenoid in the Clunker serves the same purpose as
+        the IBM 5251, but uses a smaller solenoid. This results in a higher
+        pitched sound that is closer to a typewriter while also providing haptic
+        feedback with each keypress.
+      </p>
+      <figure>
+        <video
+          src="imgs/keyboards/clunker/clunker_solenoid_demo.mp4"
+          controls
+          class="center__image project__video"
+        ></video>
+        <figcaption class="caption" style="margin-top: -50px">
+          Demonstration of the solenoid of the Clunker
+        </figcaption>
+      </figure>
 
       <!-- Build specs -->
       <h2 style="margin-top: 60px">Build Specification</h2>
@@ -147,32 +280,45 @@
         <li><strong>Switches: </strong>Gazzew 52g Bobagums</li>
         <li><strong>Plate: </strong>FR4 plate</li>
         <li><strong>Stabilizers: </strong>TX stabilizers</li>
-        <li><strong>Foam(s): </strong>Insert foams used here</li>
+        <li><strong>Foam(s): </strong>Stabilizer foam pads (from KBDfans)</li>
       </ul>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Nullam eget felis
-        eget nunc lobortis mattis aliquam faucibus. Cursus euismod quis viverra
-        nibh. Sit amet nulla facilisi morbi tempus iaculis.
+        The stabilizer foam pads are thin pads that are place between each of
+        the stabilizer slots. This foam dampens the sound of the stabilizer when
+        it makes contact with the PCB during a keypress.
       </p>
       <figure>
-        <img
-          src=""
-          alt="A picture of the configuration of the Clunker"
-          class="center__image"
-        />
-        <figcaption class="caption">
-          <i> The configuration of the Clunker </i>
-        </figcaption>
+        <figure>
+          <img
+            src="imgs/keyboards/clunker/clunker_pcb_pads.jpg"
+            alt="A picture of the stabilizer pads on the Clunker PCB"
+            class="center__image"
+          />
+          <figcaption class="caption">
+            <i>The stabilizer pads on the Clunker PCB</i>
+          </figcaption>
+        </figure>
+        <figure>
+          <img
+            src="imgs/keyboards/clunker/clunker_config.jpg"
+            alt="A picture of the configuration of the Clunker"
+            class="center__image"
+          />
+          <figcaption class="caption">
+            <i> The configuration of the Clunker </i>
+          </figcaption>
+        </figure>
       </figure>
 
       <!-- Review -->
       <h2 style="margin-top: 60px">Personal Review</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Nullam eget felis
-        eget nunc lobortis mattis aliquam faucibus. Cursus euismod quis viverra
-        nibh. Sit amet nulla facilisi morbi tempus iaculis.
+        The Clunker is a keyboard that packs many unique features into an
+        extremely small form factor while also being affordable. The solenoid is
+        a fun feature that I enjoy using even though it can be loud at times.
+        The knob is another useful feature that slightly helps with adding more
+        functionality to its minimal layout. However, the compactness of a 40%
+        keyboard constantly reminds me how much I take certain keys for granted.
       </p>
 
       <!-- Gallery -->
