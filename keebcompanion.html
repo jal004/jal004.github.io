@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Projects: KeebCompanion</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="imgs/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="imgs/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="imgs/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="imgs/favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="imgs/favicons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Font awesome icons -->
+    <script
+      src="https://kit.fontawesome.com/e4e06371c3.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-5R9LBTMJKB"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-5R9LBTMJKB");
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html#projects">
+          <img
+            src="imgs/logos/logo1_crop.png"
+            alt="A picture of Jason Lee's logo"
+          />
+        </a>
+      </div>
+
+      <!-- Nav -->
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html#home" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#about" class="nav__link">About Me</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#edu" class="nav__link">My Education</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#projects" class="nav__link">My Projects</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#keyboards" class="nav__link">My Keyboards</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro">
+      <h1 class="section__title section__title--intro">
+        KeebCompanion:
+        <strong>A Collection of</strong>
+        <strong>Mechanical</strong>
+        <strong>Keyboard Tools</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">
+        MySQL, Express, React, and Node
+      </p>
+      <img
+        src="imgs/projects/keebcompanion/logos/keebcompanion_intro.jpg"
+        alt="A picture of the UPick logo"
+        class="intro__img center__image"
+      />
+    </section>
+
+    <div class="portfolio-item-individual">
+      <h2>Project Overview</h2>
+      <p>
+        KeebCompanion is a personal collection of web applications that serve as
+        useful tools for those in the mechanical keyboard hobby. This collection
+        was created in February 2023 to apply my knowlege of MySQL after
+        completing a course on this language. These applications follow a
+        model-view-controller (MVC) design pattern and utilize local MySQL
+        databases.
+      </p>
+      <figure>
+        <img
+          src="imgs/projects/keebcompanion/keebcompanion_imgs/logo_main.png"
+          alt="A picture of the KeebCompanion logo"
+          class="center__image-shadow"
+          id="kc_logo"
+        />
+        <figcaption class="caption-shadow">
+          <i>The KeebCompanion Logo</i>
+        </figcaption>
+      </figure>
+      <p>
+        KeebCompanion consists of <u>two web applications</u>:
+        <i>KeebCollection</i> and <i>KeebTimer</i>. These applications were
+        created after being unable to find tools that completely satisfied my
+        needs in the mechanical keyboard hobby. Below are brief descriptions of
+        the two applications. To learn more about these applications, please
+        visit the GitHub repository linked at the bottom of the page.
+      </p>
+
+      <h2 class="app-titles">KeebCollection</h2>
+      <figure>
+        <img
+          src="imgs/projects/keebcompanion/keebcompanion_imgs/collection_main.png"
+          alt="A picture of the KeebCompanion logo"
+          class="center__image-shadow"
+          id="kc_logo"
+        />
+        <figcaption class="caption-shadow">
+          <i>The KeebCollection Logo</i>
+        </figcaption>
+      </figure>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. A minima
+        deleniti magnam consequuntur alias illo et ad nostrum quis consequatur.
+        Voluptas, deserunt modi odio corporis quasi, minima provident dicta
+        saepe culpa cumque eum qui voluptatum laboriosam pariatur quis repellat
+        assumenda, natus alias esse sit! Laborum eligendi tempora fugiat
+        asperiores neque?
+      </p>
+
+      <h2 class="app-titles">KeebTimer</h2>
+      <figure>
+        <img
+          src="imgs/projects/keebcompanion/keebcompanion_imgs/timer_main.png"
+          alt="A picture of the KeebCompanion logo"
+          class="center__image-shadow"
+          id="kc_logo"
+        />
+        <figcaption class="caption-shadow">
+          <i>The KeebTimer Logo</i>
+        </figcaption>
+      </figure>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. A minima
+        deleniti magnam consequuntur alias illo et ad nostrum quis consequatur.
+        Voluptas, deserunt modi odio corporis quasi, minima provident dicta
+        saepe culpa cumque eum qui voluptatum laboriosam pariatur quis repellat
+        assumenda, natus alias esse sit! Laborum eligendi tempora fugiat
+        asperiores neque?
+      </p>
+
+      <h2 style="margin-top: 60px">My Role in the Project</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+        perferendis provident dignissimos, explicabo ut tenetur maiores
+        repellendus, deserunt inventore illo facilis soluta, sunt quaerat vel
+        mollitia. Repudiandae, totam harum veniam voluptas voluptatem itaque
+        voluptatum expedita impedit odit architecto maiores a excepturi non
+        esse. Sint qui eligendi sunt consequuntur possimus commodi.
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab aperiam nemo
+        velit a numquam eius, animi sunt quod atque voluptates ut minima tenetur
+        voluptas exercitationem pariatur consequatur. Omnis quod dolor iure ad
+        harum laudantium neque eaque quos dolorum officiis, tempora minus,
+        aspernatur voluptatibus eius dignissimos reiciendis praesentium
+        provident! Aperiam, hic.
+      </p>
+
+      <h2 style="margin-top: 60px">Source Code</h2>
+      <a href="https://github.com/jal004/KeebCompanion" target="_blank">
+        <img
+          class="github_src center__image"
+          src="imgs/projects/GitHub_logo.png"
+          alt="A picture of the GitHub logo"
+        />
+      </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="mailto:jaslee643@gmail.com" target="_blank" class="footer__link"
+        >jaslee643@gmail.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://github.com/jal004"
+            target="_blank"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.linkedin.com/in/jason-lee-95b1a4203/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>
