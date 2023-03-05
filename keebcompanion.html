@@ -139,8 +139,7 @@
         useful tools for those in the mechanical keyboard hobby. This collection
         was created in February 2023 to apply my knowlege of MySQL after
         completing a course on this language. These applications follow a
-        model-view-controller (MVC) design pattern and utilize local MySQL
-        databases.
+        RESTful design pattern and utilize local MySQL databases.
       </p>
       <figure>
         <img
@@ -154,15 +153,16 @@
         </figcaption>
       </figure>
       <p>
-        KeebCompanion consists of <u>two web applications</u>:
+        KeebCompanion consists of two web applications:
         <i>KeebCollection</i> and <i>KeebTimer</i>. These applications were
         created after being unable to find tools that completely satisfied my
-        needs in the mechanical keyboard hobby. Below are brief descriptions of
-        the two applications. To learn more about these applications, please
-        visit the GitHub repository linked at the bottom of the page.
+        needs in the mechanical keyboard hobby. The remainder of this page
+        covers brief descriptions of the two applications. To learn more about
+        these applications, please visit the GitHub repository linked at the
+        bottom of the page.
       </p>
 
-      <h2 class="app-titles">KeebCollection</h2>
+      <h2 class="app-titles">KeebCollection:</h2>
       <figure>
         <img
           src="imgs/projects/keebcompanion/keebcompanion_imgs/collection_main.png"
@@ -176,15 +176,35 @@
       </figure>
 
       <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. A minima
-        deleniti magnam consequuntur alias illo et ad nostrum quis consequatur.
-        Voluptas, deserunt modi odio corporis quasi, minima provident dicta
-        saepe culpa cumque eum qui voluptatum laboriosam pariatur quis repellat
-        assumenda, natus alias esse sit! Laborum eligendi tempora fugiat
-        asperiores neque?
+        KeebCollection is the first tool in the KeebCompanion collection. This
+        tool allows users to store their collection of various mechanical
+        keyboard parts. The tool features the create, read, update, and delete
+        (CRUD) operations while also providing statistics for the items added.
       </p>
 
-      <h2 class="app-titles">KeebTimer</h2>
+      <figure>
+        <img
+          src="imgs/projects/keebcompanion/keebcompanion_imgs/collection_preview.png"
+          alt="A picture of the KeebCompanion homepage"
+          class="center__image-shadow"
+        />
+        <figcaption class="caption-shadow">
+          <i>The KeebCollection Homepage</i>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src="imgs/projects/keebcompanion/keebcompanion_imgs/collection_create.png"
+          alt="A picture of the KeebCompanion homepage"
+          class="center__image-shadow"
+        />
+        <figcaption class="caption-shadow">
+          <i>The KeebCollection 'Add Item' Page</i>
+        </figcaption>
+      </figure>
+
+      <h2 class="app-titles">KeebTimer:</h2>
       <figure>
         <img
           src="imgs/projects/keebcompanion/keebcompanion_imgs/timer_main.png"
@@ -198,31 +218,156 @@
       </figure>
 
       <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. A minima
-        deleniti magnam consequuntur alias illo et ad nostrum quis consequatur.
-        Voluptas, deserunt modi odio corporis quasi, minima provident dicta
-        saepe culpa cumque eum qui voluptatum laboriosam pariatur quis repellat
-        assumenda, natus alias esse sit! Laborum eligendi tempora fugiat
-        asperiores neque?
+        KeebTimer is the second tool in the KeebCompanion collection. This tool
+        is both a timer and a counter that allows users to manage their time
+        spent performing mechanical keyboard related tasks. Users can also store
+        their timer and counter values for each task.
       </p>
+
+      <figure>
+        <img
+          src="imgs/projects/keebcompanion/keebcompanion_imgs/timer_home.png"
+          alt="A picture of the KeebTimer homepage"
+          class="center__image-shadow"
+        />
+        <figcaption class="caption-shadow">
+          <i>The KeebTimer Homepage</i>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src="imgs/projects/keebcompanion/keebcompanion_imgs/timer_start_new_page.png"
+          alt="A picture of the KeebTimer homepage"
+          class="center__image-shadow"
+        />
+        <figcaption class="caption-shadow">
+          <i>The KeebTimer 'Start New Timer' Page</i>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src="imgs/projects/keebcompanion/keebcompanion_imgs/timer_view_table.png"
+          alt="A picture of the KeebTimer saved times"
+          class="center__image-shadow"
+        />
+        <figcaption class="caption-shadow">
+          <i>The KeebTimer 'View Saved Times' Page</i>
+        </figcaption>
+      </figure>
 
       <h2 style="margin-top: 60px">My Role in the Project</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-        perferendis provident dignissimos, explicabo ut tenetur maiores
-        repellendus, deserunt inventore illo facilis soluta, sunt quaerat vel
-        mollitia. Repudiandae, totam harum veniam voluptas voluptatem itaque
-        voluptatum expedita impedit odit architecto maiores a excepturi non
-        esse. Sint qui eligendi sunt consequuntur possimus commodi.
+        KeebCompanion is a project that I created and developed entirely by
+        myself. Each of the applications follow a RESTful design pattern. Below
+        is a brief explanation of the implementation and technologies used in
+        each of the two tools.
+      </p>
+
+      <h2 class="app-titles">REST API:</h2>
+      <p>
+        Each of the two tools in KeebCompanion utilize a REST API as a bridge
+        between the user (client) and database (server) sides of the
+        application.
       </p>
 
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab aperiam nemo
-        velit a numquam eius, animi sunt quod atque voluptates ut minima tenetur
-        voluptas exercitationem pariatur consequatur. Omnis quod dolor iure ad
-        harum laudantium neque eaque quos dolorum officiis, tempora minus,
-        aspernatur voluptatibus eius dignissimos reiciendis praesentium
-        provident! Aperiam, hic.
+        The <i>client</i> side of the applications consists of the user
+        interfaces that are displayed during use. Certain pages on these
+        interfaces display dynamic values that are fetched from a database using
+        the REST API. There are buttons on these interfaces that call the REST
+        API to modify the database as well.
+      </p>
+
+      <p>
+        The <i>server</i> side of the applications is a web server that receives
+        the results of the REST API calls. These results are from various POST,
+        GET, PUT, and DELETE HTTP methods that are called for each of the CRUD
+        operations when needed.
+      </p>
+      <p>
+        More information on these REST APIs can be viewed in the 'index.js' file
+        of the 'server' directories for each the two tools in the KeebCompanion
+        GitHub repository. Here are the links to this file for
+        <a
+          href="https://github.com/jal004/KeebCompanion/blob/main/KeebCollection/server/index.js"
+          target="_blank"
+          >KeebCollection</a
+        >
+        and
+        <a
+          href="https://github.com/jal004/KeebCompanion/blob/main/KeebTimer/server/index.js"
+          target="_blank"
+          >KeebTimer.</a
+        >
+      </p>
+
+      <h2 class="app-titles">MySQL:</h2>
+      <p>
+        The two tools use MySQL to store user data and return specific queries
+        for the user to view. Each of the tools automatically create the
+        required database and tables in MySQL during their initializations.
+      </p>
+
+      <p>
+        The tables for both of the tools use primary keys to distinguish rows of
+        user data. Additionally, KeebTimer features an additional table with a
+        foreign key in order to implement a one-to-many relationship for this
+        application. The queries utilize aggregate and window functions as well
+        as joins to extract specific information on the user data.
+      </p>
+
+      <p>
+        Since these MySQL operations are executed by the REST API, information
+        on the MySQL database schemas and queries can also be seen in the
+        'index.js' file of the 'server' directories for each the two tools in
+        the KeebCompanion GitHub repository.
+      </p>
+
+      <h2 class="app-titles">Express:</h2>
+      <p>
+        Express is the framework that is used to define each of the requests in
+        the REST APIs of the two tools. In other words, Express is used to
+        create the REST APIs described above for each application.
+      </p>
+
+      <h2 class="app-titles">React:</h2>
+      <p>
+        React is a JavaScript library that is responsible for the user
+        interfaces of each application. All of the pages in both tools are
+        "React arrow function components". These pages utilize the Axios NPM
+        package to send requests to the REST API from the client side.
+        Additoinally, React hooks such as useState, useEffect, and useRef are
+        used to dynamically restore previously existing states for certain
+        pages.
+      </p>
+
+      <p>
+        More information on these pages can be viewed in the files of the
+        'client/src/pages' directory for each the two tools in the KeebCompanion
+        GitHub repository. Here are the links to these directories for
+        <a
+          href="https://github.com/jal004/KeebCompanion/tree/main/KeebCollection/client/src/pages"
+          target="_blank"
+          >KeebCollection</a
+        >
+        and
+        <a
+          href="https://github.com/jal004/KeebCompanion/tree/main/KeebTimer/client/src/pages"
+          target="_blank"
+          >KeebTimer.</a
+        >
+      </p>
+
+      <h2 class="app-titles">Node:</h2>
+      <p>
+        Node is a runtime environment for executing JavaScript. In other words,
+        Node serves as the foundation for all backend logic in the applications.
+        This includes the REST APIs created by Express. Additionally, Node is
+        used to install specific packages through the Node Package Manager
+        (NPM). These packages contain functions that are necessary in developing
+        both the client and server sides of the application.
       </p>
 
       <h2 style="margin-top: 60px">Source Code</h2>
